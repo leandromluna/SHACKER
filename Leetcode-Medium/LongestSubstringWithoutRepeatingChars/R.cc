@@ -24,3 +24,16 @@ public:
 // Time Complexity: O(n)
 // The space complexity: O(1)
 // Trade-off: Easier to understand but slower because it removes characters one by onie when duplicates appears.
+
+/*
+What does your algorithm do?
+- It use a sliding window with two pointers and a set to maintain a substring without repeated characters
+Why is it correct?
+- The window always represents a continous substring.
+When a duplicate appears, we shrink the window from the left until the duplicate is removed.
+Time Complexity
+- Each character is inserted and removed at most once, so the time complexity is O(n)
+Space Complexity
+- The set stores at most one occurrence of each possible character, so space complexity is O(1) 
+
+*/

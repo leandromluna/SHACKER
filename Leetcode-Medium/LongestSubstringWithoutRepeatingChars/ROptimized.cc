@@ -19,3 +19,6 @@ public:
 // Time Complexity: O(n)
 // The space complexity: O(1)
 // Trade-off: Faster because it jumps directly to the next valid position, but slightly harder to understand.
+/**
+Instead of removing characters one by one, I store the last index of each character and jump the left pointer directly, keeping the window valid at all times.
+ */
